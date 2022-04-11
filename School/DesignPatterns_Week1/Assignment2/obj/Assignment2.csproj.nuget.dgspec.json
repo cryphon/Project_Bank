@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yvan\\source\\repos\\DesignPatterns_Week1\\Assignment2\\Assignment2.csproj": {}
+    "C:\\Users\\Yvan\\Source\\Repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment2\\Assignment2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yvan\\source\\repos\\DesignPatterns_Week1\\Assignment2\\Assignment2.csproj": {
+    "C:\\Users\\Yvan\\Source\\Repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment2\\Assignment2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yvan\\source\\repos\\DesignPatterns_Week1\\Assignment2\\Assignment2.csproj",
+        "projectUniqueName": "C:\\Users\\Yvan\\Source\\Repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment2\\Assignment2.csproj",
         "projectName": "Assignment2",
-        "projectPath": "C:\\Users\\Yvan\\source\\repos\\DesignPatterns_Week1\\Assignment2\\Assignment2.csproj",
+        "projectPath": "C:\\Users\\Yvan\\Source\\Repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment2\\Assignment2.csproj",
         "packagesPath": "C:\\Users\\Yvan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yvan\\source\\repos\\DesignPatterns_Week1\\Assignment2\\obj\\",
+        "outputPath": "C:\\Users\\Yvan\\Source\\Repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
