@@ -1,0 +1,16 @@
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\obj\Debug\net5.0\Assignment2.csproj.AssemblyReference.cache
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\obj\Debug\net5.0\Assignment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\obj\Debug\net5.0\Assignment2.AssemblyInfoInputs.cache
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\obj\Debug\net5.0\Assignment2.AssemblyInfo.cs
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\obj\Debug\net5.0\Assignment2.csproj.CoreCompileInputs.cache
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\bin\Debug\net5.0\Assignment2.exe
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\bin\Debug\net5.0\Assignment2.deps.json
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\bin\Debug\net5.0\Assignment2.runtimeconfig.json
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\bin\Debug\net5.0\Assignment2.runtimeconfig.dev.json
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\bin\Debug\net5.0\Assignment2.dll
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\bin\Debug\net5.0\Assignment2.pdb
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\obj\Debug\net5.0\Assignment2.dll
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\obj\Debug\net5.0\refint\Assignment2.dll
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\obj\Debug\net5.0\Assignment2.pdb
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\obj\Debug\net5.0\Assignment2.genruntimeconfig.cache
+C:\Users\Yvan\source\repos\DesignPatterns_Week1\Assignment2\obj\Debug\net5.0\ref\Assignment2.dll
