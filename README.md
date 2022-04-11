@@ -3,7 +3,7 @@
 ## Languages
 * C#
 * Java
-* HTML/CSS/SCSS/
+* HTML/CSS/SCSS
 * TypeScript/Javascript
 * Python
 
