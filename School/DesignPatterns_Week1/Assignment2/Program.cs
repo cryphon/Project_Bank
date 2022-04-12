@@ -13,7 +13,7 @@ namespace Assignment2
         void Start()
         {
             string msg = "";
-            IPencil pencil = new Pencil(16);
+            IPencil pencil = new Pencil(20);
             do
             {
                 Console.ResetColor();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yvanr\\source\\repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment1\\Assignment1.csproj": {}
+    "C:\\Users\\yvanr\\Source\\Repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment1\\Assignment1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yvanr\\source\\repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment1\\Assignment1.csproj": {
+    "C:\\Users\\yvanr\\Source\\Repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment1\\Assignment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yvanr\\source\\repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment1\\Assignment1.csproj",
+        "projectUniqueName": "C:\\Users\\yvanr\\Source\\Repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment1\\Assignment1.csproj",
         "projectName": "Assignment1",
-        "projectPath": "C:\\Users\\yvanr\\source\\repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment1\\Assignment1.csproj",
+        "projectPath": "C:\\Users\\yvanr\\Source\\Repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment1\\Assignment1.csproj",
         "packagesPath": "C:\\Users\\yvanr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yvanr\\source\\repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment1\\obj\\",
+        "outputPath": "C:\\Users\\yvanr\\Source\\Repos\\cryphon\\Project_Bank\\School\\DesignPatterns_Week1\\Assignment1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yvanr\\AppData\\Roaming\\NuGet\\NuGet.Config",
