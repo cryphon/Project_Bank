@@ -9,13 +9,9 @@ namespace Assignment1
     internal class ArrayStack : IStack
     {
         protected int[] _StackValues;
-        private int _Count;
+        private int _Count = 0;
 
-        public ArrayStack(int n)
-        {
-            _StackValues = new int[n];
-            _Count = 0;
-        } 
+        public ArrayStack(int n) => _StackValues = new int[n];
 
         public bool Contains(int value)
         {
@@ -34,10 +30,10 @@ namespace Assignment1
         {
             if (_Count == 0)
                 throw new InvalidOperationException("Stack is empty!");
+            _Count--;
+            int last = _StackValues[_Count];
+            _StackValues[_Count] = 0;
 
-            int last = _StackValues[_Count - 1];
-            _StackValues[_Count - 1] = 0;
-            _Count --;
             return last;
         }
 

@@ -13,7 +13,7 @@ namespace Assignment2
 
         public Pencil(int maxToWrite) => this.maxToWrite = maxToWrite;
 
-        public bool canWrite => maxToWrite == nrOfCharsWritten ? true : false;
+        public bool canWrite => maxToWrite > nrOfCharsWritten;
 
         public void AfterSharpening() => nrOfCharsWritten = 0;
 
@@ -22,7 +22,7 @@ namespace Assignment2
             foreach(char c in msg)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                if (!canWrite)
+                if (canWrite)
                 {
                     Console.Write(c);
                     nrOfCharsWritten++;

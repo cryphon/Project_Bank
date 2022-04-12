@@ -27,6 +27,9 @@ namespace Assignment2
                     SharpenPencil(pencil);
                     continue;
                 }
+                if (msg == "stop")
+                    continue;
+
                 WriteMessage(pencil, msg);
             } while (msg != "stop");
         }

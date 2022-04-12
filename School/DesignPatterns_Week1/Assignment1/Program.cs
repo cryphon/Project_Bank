@@ -38,6 +38,10 @@ namespace Assignment1
             {
                 Console.Write("Enter a number: ");
                 num = int.Parse(Console.ReadLine());
+
+                if (num == 0)
+                    continue;
+
                 if (stack.Contains(num))
                     Console.WriteLine($"stack contains value {num}");
                 else
