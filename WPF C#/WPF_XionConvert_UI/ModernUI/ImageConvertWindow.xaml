@@ -99,12 +99,16 @@
                     VerticalAlignment="Center"
                     Margin="60"
                     >
-            <StackPanel Name="StackPanelContentLeftHome" Visibility="Visible">
+            <StackPanel Name="StackPanelContentLeftHome" Visibility="Visible" AllowDrop="True">
                 <Border BorderBrush="#383660" BorderThickness="2" CornerRadius="7">
                     <!--Here will be drop allowed to import file and convert to other filetypes-->
                     <StackPanel Orientation="Horizontal"
                             Margin="0,0,0,0"
                             Width="auto" Height="200">
+
+                        <StackPanel Width="100" Height="100">
+                            <Label Content="Hello" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                        </StackPanel>
 
                     </StackPanel>
                 </Border>
