@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\UI_Design"
+    "\\School",
+    "\\School\\DesignPatterns_Week1",
+    "\\School\\DesignPatterns_Week1\\Assignment1"
   ],
-  "SelectedNode": "\\UI_Design",
+  "SelectedNode": "\\School\\DesignPatterns_Week1\\Assignment1\\IStack.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -26,7 +26,7 @@ namespace Assignment1
             return false;
         }
 
-        public int Count() => _Count;
+        public int Count => _Count;
 
         public bool IsEmpty() => _Count == 0;
 
@@ -35,24 +35,15 @@ namespace Assignment1
             if (_Count == 0)
                 throw new InvalidOperationException("Stack is empty!");
 
-            int value = _StackValues[_Count - 1];
-            int[] newArray = new int[_Count - 1];
-            for (int i = 0; i < _Count - 1; i++)
-                newArray[i] = _StackValues[i];
-
-            _StackValues = newArray;
+            int last = _StackValues[_Count - 1];
+            _StackValues[_Count - 1] = 0;
             _Count --;
-            return value;
+            return last;
         }
 
         public void Push(int value)
         {
-            int[] newArray = new int[_Count + 1];
-            for (int i = 0; i < _Count; i++)
-                newArray[i] = _StackValues[i];
-
-            newArray[_Count] = value;
-            _StackValues = newArray;
+            _StackValues[_Count] = value;
             _Count++;
         }
     }

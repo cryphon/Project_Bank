@@ -25,7 +25,7 @@ namespace Assignment1
             {
                 int val = r.Next(1,100); 
                 stack.Push(val);
-                Console.WriteLine($"pushed {val}, new count: {stack.Count()}");
+                Console.WriteLine($"pushed {val}, new count: {stack.Count}");
             }
             Console.WriteLine();
         }
@@ -52,7 +52,7 @@ namespace Assignment1
             while (!stack.IsEmpty())
             {
                 int val = stack.Pop();
-                Console.WriteLine($"popped {val}, new count: {stack.Count()}");
+                Console.WriteLine($"popped {val}, new count: {stack.Count}");
             }
         }
     }

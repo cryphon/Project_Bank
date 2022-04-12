@@ -5,7 +5,7 @@
         void Push(int value);
         int Pop();
         bool Contains(int value);
-        int Count();
+        int Count { get; }
         bool IsEmpty();
     }
 }
