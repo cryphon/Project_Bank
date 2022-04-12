@@ -43,7 +43,7 @@ namespace Assignment1
 
         public void Push(int value)
         {
-            if (_Count == 0)
+            if (_Count == _StackValues.Length)
                 throw new InvalidOperationException("Stack is full!");
 
             _StackValues[_Count] = value;

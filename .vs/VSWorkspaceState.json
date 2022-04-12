@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WPF C#",
-    "\\WPF C#\\WPF_XionConvert_UI",
-    "\\WPF C#\\WPF_XionConvert_UI\\ModernUI"
+    "\\School",
+    "\\School\\DesignPatterns_Week1",
+    "\\School\\DesignPatterns_Week1\\Assignment2",
+    "\\WPF C#"
   ],
-  "SelectedNode": "\\WPF C#\\WPF_XionConvert_UI\\ModernUI\\ImageConvertWindow.xaml",
+  "SelectedNode": "\\School\\DesignPatterns_Week1\\Assignment2\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
