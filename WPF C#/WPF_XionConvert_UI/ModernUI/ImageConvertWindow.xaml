@@ -107,7 +107,7 @@
                             Width="auto" Height="200">
 
                         <StackPanel Width="100" Height="100">
-                            <Label Content="Hello" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                            <Label Content="Hello" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Padding="10"/>
                         </StackPanel>
 
                     </StackPanel>
