@@ -30,6 +30,13 @@ namespace EncFile
         public static byte[] GenerateSalt()
         {
             byte[] salt = new byte[32];
+            string pass = "Helo";
+            byte[] pwd = new byte[pass.Length];
+
+            for (int i = 0; i < pass.Length; i++)
+                pwd[i] = Convert.ToByte(pass[i]);
+            
+           
 
             RNGCryptoServiceProvider rngCsp = new RNGCryptoServiceProvider();
 
