@@ -17,7 +17,7 @@ namespace EncFile
         {
             Console.Write("Message to encrypt: ");
             string msg = Console.ReadLine();
-            byte[] buffer = StringEncrypt(msg, "password is currently not necessary");
+            byte[] buffer = StringEncrypt(msg, "password");
 
             foreach (byte b in buffer)
                 Console.Write(b);
@@ -79,17 +79,6 @@ namespace EncFile
 
             }
             return EncryptedData;
-        }
-
-        private byte[] StringPwdEnc(string input, string pass)
-        {
-            byte[] pwd = new byte[pass.Length];
-
-            for (int i = 0; i < pass.Length; i++)
-                pwd[i] = Convert.ToByte(pass[i]);
-
-            return pwd;
-
         }
     }
 }

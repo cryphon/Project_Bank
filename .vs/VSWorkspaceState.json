@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\School",
+    "\\School\\DesignPatterns_Week1",
+    "\\School\\DesignPatterns_Week1\\Assignment1"
   ],
-  "SelectedNode": "\\ModernUI.sln",
+  "SelectedNode": "\\School\\DesignPatterns_Week1\\Assignment1\\ArrayStack.cs",
   "PreviewInSolutionExplorer": false
 }
