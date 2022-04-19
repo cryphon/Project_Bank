@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\School",
-    "\\School\\DesignPatterns_Week1",
-    "\\School\\DesignPatterns_Week1\\Assignment1"
+    "\\School\\DesignPatterns_Week2",
+    "\\School\\DesignPatterns_Week2\\ConwayGameOfLife-student"
   ],
-  "SelectedNode": "\\School\\DesignPatterns_Week1\\Assignment1\\ArrayStack.cs",
+  "SelectedNode": "\\School\\DesignPatterns_Week2\\ConwayGameOfLife-student\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

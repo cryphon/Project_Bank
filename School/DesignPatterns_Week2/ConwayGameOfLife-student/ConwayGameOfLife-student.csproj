@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ConwayGameOfLife</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>ConwayGameOfLife</AssemblyName>
+  </PropertyGroup>
+
+</Project>
