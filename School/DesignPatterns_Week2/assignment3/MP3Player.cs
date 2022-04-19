@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Linq;
 
 namespace assignment3
 {
@@ -20,12 +16,10 @@ namespace assignment3
                                           new Song("Wish you were here", "Pink Floyd", new TimeSpan(0, 5, 39)),
                                           new Song("Dazed and Confused", "Led Zeppelin", new TimeSpan(0, 6, 26)),
                                           new Song("Billionaire", "Bruno Mars", new TimeSpan(0, 3, 31))};
-                                            
         }
 
         public void NextSong()
         {
-            
             Song rndSong = SongList[rnd.Next(SongList.Count)];
             CurrentSong = rndSong;
 

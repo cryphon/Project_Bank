@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace assignment3
+﻿namespace assignment3
 {
     internal class Program
     {

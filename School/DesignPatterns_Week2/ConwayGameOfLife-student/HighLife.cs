@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ConwayGameOfLife
+﻿namespace ConwayGameOfLife
 {
     internal class HighLife : ConwayGameOfLife
     {
