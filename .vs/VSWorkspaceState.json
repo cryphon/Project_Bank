@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\School",
+    "\\School\\DesignPatterns_Week2",
+    "\\School\\DesignPatterns_Week2\\ConwayGameOfLife-student"
   ],
-  "SelectedNode": "\\ModernUI.sln",
+  "SelectedNode": "\\School\\DesignPatterns_Week2\\ConwayGameOfLife-student\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
