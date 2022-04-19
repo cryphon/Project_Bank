@@ -14,10 +14,10 @@ namespace assignment3
 
         public MP3Player()
         {
-            SongList = new List<Song>() { new Song("Papillon", "Editors", 5.24),
-                                          new Song("Wish you were here", "Pink Floyd", 5.39),
-                                          new Song("Dazed and Confused", "Led Zeppelin", 6.26),
-                                          new Song("Billionaire", "Bruno Mars", 3.31)};
+            SongList = new List<Song>() { new Song("Papillon", "Editors", new TimeSpan(0, 5, 24)),
+                                          new Song("Wish you were here", "Pink Floyd", new TimeSpan(0, 5, 39)),
+                                          new Song("Dazed and Confused", "Led Zeppelin", new TimeSpan(0, 6, 26)),
+                                          new Song("Billionaire", "Bruno Mars", new TimeSpan(0, 3, 31))};
                                             
         }
 
@@ -27,8 +27,11 @@ namespace assignment3
             CurrentSong = SongList[rnd.Next(SongList.Count)];
 
             foreach (IObserver observer in _observers)
+            {
                 observer.update(CurrentSong);
-
+                observer.DisplayData();
+            }
+                
         }
 
         public void Addobserver(IObserver observer) => _observers.Add(observer);

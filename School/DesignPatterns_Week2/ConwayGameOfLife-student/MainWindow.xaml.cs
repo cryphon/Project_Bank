@@ -18,7 +18,7 @@ namespace ConwayGameOfLife
             InitializeComponent();
 
             // create a game
-            game = new HighLife();
+            game = new HighLife(); // change StandardLife to HighLife if neccesary
             drawer = new ConwayGameOfLifeDrawer(game, this.imgConway, 2);
 
             DispatcherTimer timer = new DispatcherTimer();

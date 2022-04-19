@@ -10,14 +10,14 @@ namespace assignment3
     {
         string _Name;
         string _Artist;
-        double _Duration;
+        TimeSpan _Duration;
 
         public string Name { get { return _Name; } }
         public string Artist { get { return _Artist; } }
-        public double Duration { get { return _Duration; } }
+        public TimeSpan Duration { get { return _Duration; } }
 
 
-        public Song(string name, string artist, double duration)
+        public Song(string name, string artist, TimeSpan duration)
         {
             this._Name = name;
             this._Artist = artist;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace assignment3
 {
-    internal class SimpleMP3Display : Display,IObserver
+    public class SimpleMP3Display : Display,IObserver
     {
 
         public SimpleMP3Display(IObservable player)

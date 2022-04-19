@@ -8,7 +8,7 @@ namespace ConwayGameOfLife
     {
         public override bool CellShouldLive(bool livingCell, int neighbourCount)
         {
-            // B3/S23
+            // B36/S23
 
             // a cell is born if it has 3 neighbors
             if (!livingCell && (neighbourCount == 6 || neighbourCount == 3))
