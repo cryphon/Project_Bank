@@ -7,6 +7,6 @@ namespace assignment3
         public FancyMP3Display(IObservable player)
             : base(player) { }
 
-        public override void DisplayData() => Console.WriteLine($"Fancy Display: {CurrentSong.Name} by {CurrentSong.Artist} ({CurrentSong.Duration.ToString("m\\:ss")})\n");
+        public override void DisplayData() => Console.WriteLine($"Fancy Display: {CurrentSong.Name} by {CurrentSong.Artist} ({CurrentSong.Duration.ToString("mm\\:ss")})\n");
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace assignment3
 {
@@ -11,6 +12,7 @@ namespace assignment3
         public Song CurrentSong { get; private set; }
         List<Song> SongList { get; set; }
         List<IObserver> _observers = new List<IObserver>();
+        Random rnd = new Random(2);
 
         public MP3Player()
         {
@@ -23,15 +25,15 @@ namespace assignment3
 
         public void NextSong()
         {
-            Random rnd = new Random();
-            CurrentSong = SongList[rnd.Next(SongList.Count)];
+            
+            Song rndSong = SongList[rnd.Next(SongList.Count)];
+            CurrentSong = rndSong;
 
             foreach (IObserver observer in _observers)
             {
                 observer.update(CurrentSong);
                 observer.DisplayData();
             }
-                
         }
 
         public void Addobserver(IObserver observer) => _observers.Add(observer);
