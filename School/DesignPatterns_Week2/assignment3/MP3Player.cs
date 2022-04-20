@@ -22,11 +22,14 @@ namespace assignment3
         {
             Song rndSong = SongList[rnd.Next(SongList.Count)];
             CurrentSong = rndSong;
+            NotifyObservers();
+        }
 
+        private void NotifyObservers()
+        {
             foreach (IObserver observer in _observers)
             {
-                observer.update(CurrentSong);
-                observer.DisplayData();
+                observer.Update(CurrentSong);
             }
         }
 

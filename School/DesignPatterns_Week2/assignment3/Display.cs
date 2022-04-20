@@ -6,7 +6,7 @@
 
         public Display(IObservable player) => player.Addobserver((IObserver)this);
 
-        public void update(Song song) => this.CurrentSong = song;
+        public virtual void Update(Song song) => this.CurrentSong = song;
 
         public abstract void DisplayData();
     }

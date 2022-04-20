@@ -8,5 +8,11 @@ namespace assignment3
             : base(player) { }
 
         public override void DisplayData() => Console.WriteLine($"Fancy Display: {CurrentSong.Name} by {CurrentSong.Artist} ({CurrentSong.Duration.ToString("mm\\:ss")})\n");
+
+        public override void Update(Song song)
+        {
+            CurrentSong = song;
+            DisplayData();
+        }
     }
 }
