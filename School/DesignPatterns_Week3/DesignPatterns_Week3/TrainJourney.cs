@@ -30,7 +30,7 @@ namespace DesignPatterns_Week3
 
         public void NextStation()
         {
-            if (_currentStation == _stations.Last()) { _currentStation = _stations[0]; }
+            if (_currentStation == _stations.Last()) { _stations.Reverse(); _currentStation = _stations[1]; }
             else
                 _currentStation = _stations[_stations.IndexOf(_currentStation) + 1];
             NotifyObservers();
