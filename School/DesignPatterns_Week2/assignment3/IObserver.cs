@@ -2,7 +2,7 @@
 {
     public interface IObserver
     {
-        void update(Song song);
+        void Update(Song song);
         void DisplayData();
     }
 }

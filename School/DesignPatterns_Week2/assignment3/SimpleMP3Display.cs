@@ -9,5 +9,11 @@ namespace assignment3
             : base(player) { }
 
         public override void DisplayData() => Console.WriteLine($"Simple display: {CurrentSong.Artist} - {CurrentSong.Name}");
+
+        public override void Update(Song song)
+        {
+            CurrentSong = song;
+            DisplayData();
+        }
     }
 }

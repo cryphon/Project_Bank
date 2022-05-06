@@ -8,7 +8,7 @@ namespace assignment3
         public Song CurrentSong { get; private set; }
         List<Song> SongList { get; set; }
         List<IObserver> _observers = new List<IObserver>();
-        Random rnd = new Random(2);
+        Random rnd = new Random();
 
         public MP3Player()
         {
@@ -22,11 +22,14 @@ namespace assignment3
         {
             Song rndSong = SongList[rnd.Next(SongList.Count)];
             CurrentSong = rndSong;
+            NotifyObservers();
+        }
 
+        private void NotifyObservers()
+        {
             foreach (IObserver observer in _observers)
             {
-                observer.update(CurrentSong);
-                observer.DisplayData();
+                observer.Update(CurrentSong);
             }
         }
 
