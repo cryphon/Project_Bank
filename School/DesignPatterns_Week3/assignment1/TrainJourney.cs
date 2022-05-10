@@ -19,10 +19,7 @@ namespace DesignPatterns_Week3
 
         List<ITrainDisplay> _observers = new List<ITrainDisplay>();
 
-        public int GetObserverCount
-        {
-            get { return _observers.Count; }
-        }
+        public int GetObserverCount() => _observers.Count;
 
         public void AddObserver(ITrainDisplay observer) => _observers.Add(observer);
 

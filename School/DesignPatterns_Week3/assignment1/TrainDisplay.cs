@@ -12,9 +12,13 @@ namespace DesignPatterns_Week3
 {
     public partial class TrainDisplay : Form, ITrainDisplay
     {
-        public TrainDisplay()
+        public TrainDisplay(ITrainJourney _journey)
         {
             InitializeComponent();
+            _journey.AddObserver(this);
+            Text = $"Train display #{_journey.GetObserverCount()}";
+            Show();
+
         }
 
         public void Update(Station station)

@@ -32,10 +32,7 @@ namespace DesignPatterns_Week3
 
         private void btnNewDisplay_Click(object sender, EventArgs e)
         {
-            TrainDisplay newDisplay = new TrainDisplay();
-            newDisplay.Text = $"Train display #{_journey.GetObserverCount + 1}";
-            _journey.AddObserver(newDisplay);
-            newDisplay.Show();
+            TrainDisplay newDisplay = new TrainDisplay(_journey);
         }
     }
 }

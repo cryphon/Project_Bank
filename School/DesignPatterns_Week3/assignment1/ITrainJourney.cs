@@ -10,6 +10,7 @@ namespace DesignPatterns_Week3
     {
         void AddObserver(ITrainDisplay controller);
         void RemoveObserver(ITrainDisplay controller);
+        int GetObserverCount();
         void NextStation();
 
     }
