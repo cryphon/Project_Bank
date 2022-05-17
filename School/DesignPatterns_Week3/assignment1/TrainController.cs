@@ -8,7 +8,6 @@ namespace DesignPatterns_Week3
 {
     public class TrainController : ITrainController
     {
-
         TrainJourney _journey { get; set; }
 
         public void NextStation() => _journey.NextStation();

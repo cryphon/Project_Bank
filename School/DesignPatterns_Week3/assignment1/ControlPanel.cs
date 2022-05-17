@@ -27,7 +27,7 @@ namespace DesignPatterns_Week3
 
         private void btnNewStation_Click(object sender, EventArgs e)
         {
-            _journey.NextStation();
+            _controller.NextStation();
         }
 
         private void btnNewDisplay_Click(object sender, EventArgs e)
