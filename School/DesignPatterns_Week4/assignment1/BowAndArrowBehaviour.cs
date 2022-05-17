@@ -8,6 +8,6 @@ namespace assignment1
 {
     internal class BowAndArrowBehaviour : IWeaponBehaviour
     {
-        public void UseWeapon() => Console.WriteLine("Shooting and arrow with a bow");
+        public void UseWeapon() => Console.WriteLine("Shooting an arrow with a bow");
     }
 }
