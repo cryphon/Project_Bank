@@ -18,7 +18,7 @@ namespace assignment3
             t.AssignDriver("Frank");           
 
             //create robot
-            RobotAdapter rA  = new RobotAdapter();
+            RobotAdapter rA  = new RobotAdapter(new Robot());
             rA.AssignDriver("Mark");
 
             //create attacker list

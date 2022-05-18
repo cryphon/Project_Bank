@@ -8,7 +8,9 @@ namespace assignment3
 {
     public class RobotAdapter : IAttacker
     {
-        public Robot _robot = new Robot();
+        public Robot _robot;
+
+        public RobotAdapter(Robot robot) => _robot = robot;
 
         public string Driver => _robot.Person;
 

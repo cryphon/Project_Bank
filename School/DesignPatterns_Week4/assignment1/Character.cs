@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace assignment1
 {
-    internal class Character
+    abstract class Character
     {
-        public IWeaponBehaviour Weapon;
-        public Character(){ }
+        public IWeaponBehaviour Weapon { get; set; }
+
+        public Character(){ /*default */ Weapon = new SwordBehaviour(); }
 
         public void Fight() => Weapon.UseWeapon();
     }
