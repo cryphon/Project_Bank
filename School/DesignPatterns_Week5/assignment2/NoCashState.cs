@@ -17,24 +17,12 @@ namespace assignment2
             _machine._currentState = this;
         }
 
-        public void EnterPincode()
-        {
-            throw new NotImplementedException();
-        }
+        public void EnterPincode() => Console.WriteLine("Not enough cash available in machine\n");
 
-        public void InsertCard()
-        {
-            throw new NotImplementedException();
-        }
+        public void InsertCard() => Console.WriteLine("Not enough cash available in machine\n");
 
-        public void RejectCard()
-        {
-            throw new NotImplementedException();
-        }
+        public void RejectCard() => Console.WriteLine("Not enough cash available in machine\n");
 
-        public void WithdrawCash()
-        {
-            throw new NotImplementedException();
-        }
+        public void WithdrawCash() => Console.WriteLine("Not enough cash available in machine\n");
     }
 }

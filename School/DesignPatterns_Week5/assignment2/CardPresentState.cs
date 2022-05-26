@@ -18,24 +18,26 @@ namespace assignment2
 
         public void EnterPincode()
         {
-            Console.WriteLine("Please enter your pincode: ");
-            int pin = int.Parse(Console.ReadLine());
-
-        }
-
-        public void InsertCard() => Console.WriteLine("A card has been inserted already");
-
-        public void RejectCard() => Console.WriteLine("Card has been rejected");
-
-        public void WithdrawCash()
-        {
-            Console.Write("Please eneter amount of cash: ");
-            decimal cashAmount = decimal.Parse(Console.ReadLine());
-
-            if (cashAmount <= _machine.AmountInMachine)
-                Console.WriteLine($"{cashAmount} withdrawn from machine");
+            Console.Write("Please enter your pincode: ");
+            int pincode = int.Parse(Console.ReadLine());
+            if (pincode == 1234)
+            {
+                Console.WriteLine("You have entered the correct pincode\n");
+                _machine._currentState = new CorrectPinState(_machine);
+            }
             else
-                Console.WriteLine("Not enough cash available in machine");
+                Console.WriteLine("You have entered the wrong pincode");
+                
         }
+
+        public void InsertCard() => Console.WriteLine("A card has been inserted already\n");
+
+        public void RejectCard() 
+        { 
+            Console.WriteLine("Your card has been rejected\n");
+            _machine._currentState = new NoCardState(_machine);
+        }
+
+        public void WithdrawCash() => Console.WriteLine("pincode has not been entered\n");
     }
 }

@@ -9,22 +9,19 @@ namespace assignment2
     public class ATMMachine : IATMState
     {
         decimal _amountInMachine { get; set; }
-        IATMState _cardPresent { get; set; }
-        IATMState _correctPincode { get; set; }
-        IATMState _NoCard { get; set; }
-        IATMState _NoCash { get; set; }
 
         public IATMState _currentState { get; set; }
 
-        public decimal AmountInMachine { get { return _amountInMachine; }}
+        public decimal AmountInMachine { get { return _amountInMachine; } set { _amountInMachine = value; } }
 
         public ATMMachine(decimal cashAmount)
         {
-            _cardPresent = new CardPresentState(this);
-            _correctPincode = new CorrectPinState(this);
-            _NoCard = new NoCardState(this);
-            _NoCash = new NoCashState(this);
             _amountInMachine = cashAmount;
+
+            if (cashAmount > 0)
+                _currentState = new NoCardState(this);
+            else
+                _currentState = new NoCashState(this);
                
         }
 
@@ -32,7 +29,7 @@ namespace assignment2
 
         public void RejectCard() => _currentState.RejectCard();
 
-        public void EnterPincode() => _currentState.EnterPincode();
+        public void EnterPincode() => _currentState.EnterPincode(); 
 
         public void WithdrawCash() => _currentState.WithdrawCash();
     }

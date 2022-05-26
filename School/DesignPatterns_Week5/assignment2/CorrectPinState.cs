@@ -15,24 +15,32 @@ namespace assignment2
             _machine._currentState = this;
         }
 
-        public void EnterPincode()
-        {
-            throw new NotImplementedException();
-        }
+        public void EnterPincode() => Console.WriteLine("Pincode has already been entered\n");
 
-        public void InsertCard()
-        {
-            throw new NotImplementedException();
-        }
+        public void InsertCard() => Console.WriteLine("Card has been inserted already\n");
 
         public void RejectCard()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Your card has been rejected\n");
+            _machine._currentState = new NoCardState(_machine);
         }
 
         public void WithdrawCash()
         {
-            throw new NotImplementedException();
+            Console.Write("Please enter amount of cash: ");
+            decimal cashAmount = decimal.Parse(Console.ReadLine());
+
+            if (cashAmount <= _machine.AmountInMachine)
+            {
+                Console.WriteLine($"{cashAmount} withdrawn from machine");
+                _machine.AmountInMachine -= cashAmount;
+            }         
+            else
+            {
+                Console.WriteLine("Not enough cash available in machine\n");
+                _machine._currentState = new NoCashState(_machine);
+            }
+            RejectCard();
         }
     }
 }

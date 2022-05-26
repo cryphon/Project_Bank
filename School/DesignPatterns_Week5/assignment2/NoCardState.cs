@@ -15,24 +15,16 @@ namespace assignment2
             _machine = machine;
             _machine._currentState = this;
         }
-        public void EnterPincode()
-        {
-            throw new NotImplementedException();
+        public void EnterPincode() => Console.WriteLine("No card has been inserted\n");
+
+        public void InsertCard() 
+        { 
+            Console.WriteLine("Card has been inserted\n"); 
+            _machine._currentState = new CardPresentState(_machine);
         }
 
-        public void InsertCard()
-        {
-            throw new NotImplementedException();
-        }
+        public void RejectCard() => Console.WriteLine("No card has been inserted\n");
 
-        public void RejectCard()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void WithdrawCash()
-        {
-            throw new NotImplementedException();
-        }
+        public void WithdrawCash() => Console.WriteLine("No card has been inserted\n");
     }
 }
