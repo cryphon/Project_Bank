@@ -10,17 +10,13 @@ namespace assignment2
     {
         ATMMachine _machine;
 
-        public NoCardState(ATMMachine machine)
-        {
-            _machine = machine;
-            _machine._currentState = this;
-        }
+        public NoCardState(ATMMachine machine) =>_machine = machine;
         public void EnterPincode() => Console.WriteLine("No card has been inserted\n");
 
         public void InsertCard() 
         { 
             Console.WriteLine("Card has been inserted\n"); 
-            _machine._currentState = new CardPresentState(_machine);
+            _machine.SetCurrentState(_machine.GetCardPresentState());
         }
 
         public void RejectCard() => Console.WriteLine("No card has been inserted\n");

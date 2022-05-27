@@ -10,11 +10,7 @@ namespace assignment2
     {
         ATMMachine _machine;
 
-        public CardPresentState(ATMMachine machine)
-        {
-            _machine = machine;
-            _machine._currentState = this;
-        }
+        public CardPresentState(ATMMachine machine) => _machine = machine;
 
         public void EnterPincode()
         {
@@ -23,7 +19,7 @@ namespace assignment2
             if (pincode == 1234)
             {
                 Console.WriteLine("You have entered the correct pincode\n");
-                _machine._currentState = new CorrectPinState(_machine);
+                _machine.SetCurrentState(_machine.GetCorrectPinState());
             }
             else
                 Console.WriteLine("You have entered the wrong pincode");
@@ -35,7 +31,7 @@ namespace assignment2
         public void RejectCard() 
         { 
             Console.WriteLine("Your card has been rejected\n");
-            _machine._currentState = new NoCardState(_machine);
+            _machine.SetCurrentState(_machine.GetNoCardState());
         }
 
         public void WithdrawCash() => Console.WriteLine("pincode has not been entered\n");

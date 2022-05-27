@@ -10,12 +10,7 @@ namespace assignment2
     {
         ATMMachine _machine;
 
-
-        public NoCashState(ATMMachine machine)
-        {
-            _machine = machine;
-            _machine._currentState = this;
-        }
+        public NoCashState(ATMMachine machine) => _machine = machine;
 
         public void EnterPincode() => Console.WriteLine("Not enough cash available in machine\n");
 
