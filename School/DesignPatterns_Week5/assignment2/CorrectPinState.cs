@@ -34,7 +34,8 @@ namespace assignment2
             else
             {
                 Console.WriteLine("Not enough cash available in machine\n");
-                _machine.SetCurrentState(_machine.GetNoCashState());
+                if(_machine.AmountInMachine == 0)
+                    _machine.SetCurrentState(_machine.GetNoCashState());
             }
             RejectCard();
         }
